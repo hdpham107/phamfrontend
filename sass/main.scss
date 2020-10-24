@@ -1,0 +1,31 @@
+// HELPER đầu tiên
+// variables
+@import "./Helper/mixin";
+@import "./Helper/variables";
+
+// Vendor nằm trên để code của mình ghi đè được
+
+// Base
+@import "./Base/reset";
+@import "./Base/normalize";
+
+// Components
+@import "./Components/button";
+
+// Layouts
+@import "./Layouts/header";
+// @import "./Layouts/cover";
+// @import './Layouts/intro';
+@import "./Layouts/courseCarousel";
+@import "./Layouts/courses";
+@import "./Layouts/students";
+// @import './Layouts/services';
+@import "./Layouts/categories";
+// @import "./Layouts/banner";
+// @import "./Layouts/feedback";
+@import "./Layouts/numbers";
+@import "./Layouts/footer";
+
+// Page
+
+// Theme

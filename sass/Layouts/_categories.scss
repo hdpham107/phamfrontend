@@ -1,0 +1,37 @@
+.topCategories {
+    margin-top: $mg-2;
+
+    .topCategories__content {
+        width: 80%;
+        margin: 0 auto;
+        padding: $pd-0;
+
+        h2 {
+            @include styleText($color-black-0, $fs-2, $fw-bold-1);
+        }
+
+        .row {
+            margin-bottom: $mg-1;
+        }
+
+        .topCategories__item {
+            display: flex;
+            background-color: $color-white-0;
+            border: 1px solid $color-gray-2;
+            padding: $pd-1;
+            align-items: center;
+
+            .topCategories__icon {
+                @include styleText($color-red-1, $fs-2, $fw-normal);
+                padding-right: $pd-1 + 6;
+            }
+
+            .topCategories__caption {
+                padding-top: $pd-1;
+                p {
+                    @include styleText($color-gray-4, $fs-0, $fw-normal);
+                }
+            }
+        }
+    }
+}

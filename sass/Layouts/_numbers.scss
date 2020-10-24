@@ -1,0 +1,22 @@
+.numbers {
+    /* hầu hết các section đều set padding trên dưới từ 50 tới 70px */
+    /* do là chuẩn chung */
+    padding: 70px 0;
+    .numbers__content {
+        /* height: 200px; */
+        width: 70%;
+        margin: 0 auto;
+
+        /* chắc chắn lên 1 hàng */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        text-align: center;
+    }
+}
+
+/* số chạy thì dùng thư viện */
+/* 2 điều kiện bắt buộc khi chọn thư viện  */
+/* 1 có source demo */
+/* https://www.jqueryscript.net/other/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js.html */

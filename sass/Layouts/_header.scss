@@ -1,0 +1,153 @@
+.header__left {
+    display: flex;
+    @include styleText($color-black-light, $fs-0, $fw-normal);
+    .navbar-brand {
+        width: 120px;
+        img {
+            width: 120px;
+        }
+    }
+    // .categories {
+    //     margin-right: 15px;
+    //     // thuộc tính đi chung với display flex
+    //     // dùng tại thẻ con
+    //     // canh giữa theo chiều dọc
+    //     align-self: center;
+    //     padding: $pd-1 $pd-2;
+    //     // border: 1px solid transparent;
+    //     // border-radius: $border-radius;
+    //     white-space: nowrap;
+    //     &:hover {
+    //         // background-color: $color-gray-1;
+    //         cursor: pointer;
+    //         color: $color-blue-1;
+    //     }
+    // }
+
+    .formSearch {
+        // khi dùng flex thì các thẻ con bị thu nhỏ lại để lên cùng 1 hàng
+        // nhưng vẫn còn khoảng trống
+        // để lấy khoảng trống chia cho thẻ con
+        // thì dùng flex-row
+        // flex-row: 1 thì có bao nhiêu chia cho thằng này
+        // các thẻ còn lại không khai báo flex-row thì sẽ là 0
+        // nếu có nhiều thẻ con khai báo flex-row là 1 thì flex sẽ chia đều cho các thẻ con
+        // 1 là 100%
+        flex-grow: 1;
+        .input-group {
+            .form-control {
+                padding: $pd-1;
+                // border-radius: 0;
+                // border-top: 1px solid $color-gray-1;
+                // border-left: 1px solid $color-gray-1;
+                // border-bottom: 1px solid $color-gray-1;
+                border: 1px solid $color-gray-1;
+                border-right: 0 transparent;
+
+                background-color: $color-gray-1;
+
+                &:focus {
+                    box-shadow: none;
+                    // border-top: 1px solid $color-gray-6;
+                    // border-left: 1px solid $color-gray-6;
+                    // border-bottom: 1px solid $color-gray-6;
+                    border: 1px solid $color-gray-6;
+                    border-right: 0px transparent;
+
+                    background-color: $color-white-0;
+                }
+
+                &:focus + .input-group-append {
+                    // margin-left: 0;
+                    .input-group-text {
+                        // border: none;
+                        // border-top: 1px solid $color-gray-6;
+                        // border-bottom: 1px solid $color-gray-6;
+                        // border-right: 1px solid $color-gray-6;
+                        border: 1px solid $color-gray-6;
+                        border-left: 0 transparent;
+
+                        background-color: $color-white-0;
+                    }
+                    &:hover {
+                        .input-group-text {
+                            background-color: $color-red-0;
+                            color: $color-white-0;
+                        }
+                    }
+                }
+            }
+
+            .input-group-append {
+                margin-left: 0;
+
+                .input-group-text {
+                    background-color: $color-gray-1;
+                    color: $color-red-0;
+                    border: none;
+                    // border-radius: 0;
+                    padding: $pd-1 $pd-1 + 5;
+                }
+                &:hover {
+                    .input-group-text {
+                        background-color: $color-red-0;
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__right {
+    .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+        .nav-item {
+            align-self: center;
+            // border: 1px solid transparent;
+            // border-radius: $border-radius;
+            .nav-link {
+                @include styleText($color-black-0, $fs-0, $fw-bold);
+                padding: $pd-1 $pd-1;
+                white-space: nowrap;
+                &:hover {
+                    background-color: $color-gray-1;
+                    color: $color-blue-1;
+                }
+            }
+        }
+    }
+}
+
+// 1200px
+@include responsive("extra-large") {
+    .header__left {
+        .formSearch {
+            flex-grow: 2;
+        }
+    }
+
+    .header__right {
+        .ude-menu {
+            display: none;
+        }
+    }
+}
+
+// 768px
+@include responsive("medium") {
+    .header__left {
+        .categories,
+        .formSearch {
+            display: none;
+        }
+    }
+
+    .header__right {
+        .ude-menu,
+        .ude-btnGroup {
+            display: none;
+        }
+    }
+}
