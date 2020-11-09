@@ -30,25 +30,31 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
+    <!-- VENOBOX -->
+    <link
+      rel="stylesheet"
+      href="./css/venobox.css"
+      type="text/css"
+      media="screen"
+    />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- HEADER MENU -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="container">
+      <nav class="navbar navbar-expand-lg fixed-top header__content">
         <div class="col-sm-6">
           <div class="header__left">
             <a class="navbar-brand" href="#">
-              <!-- <img src="./img/logo.png" class="img-fluid w-1" /> -->
-              ELearning
+              <img src="./img/logo.png" />
             </a>
-            <form action="" class="formSearch">
+            <!-- <form action="" class="formSearch">
               <div class="input-group">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Search for anything"
+                  placeholder="Tìm kiếm khóa học"
                 />
                 <div class="input-group-append">
                   <span class="input-group-text">
@@ -56,7 +62,7 @@
                   </span>
                 </div>
               </div>
-            </form>
+            </form> -->
             <button
               class="navbar-toggler"
               type="button"
@@ -75,16 +81,40 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Trang Chủ</a>
+                  <a class="nav-link" href="#">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    CÁC KHÓA HỌC
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Lập Trình Tư Duy</a>
+                    <a class="dropdown-item" href="#">Lập Trình Front End</a>
+                    <a class="dropdown-item" href="#">Lập Trình Back End</a>
+                    <a class="dropdown-item" href="#">Lập Trình Di Động</a>
+                    <a class="dropdown-item" href="#">Lập Trình Full Stack</a>
+                    <a class="dropdown-item" href="#">Thiết Kế Web</a>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Danh Sách Khóa Học</a>
+                  <a class="nav-link" href="#">SỰ KIỆN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Đăng Nhập</a>
+                  <a class="nav-link" href="#">BLOG</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Đăng Ký</a>
+                  <a class="nav-link" href="#">LIÊN HỆ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ĐĂNG NHẬP</a>
                 </li>
               </ul>
             </div>
@@ -110,7 +140,7 @@
           <div class="carousel-item active">
             <img
               class="d-block img-fluid"
-              src="./img/hero-1.jpg"
+              src="./img/carousel-01.jpg"
               alt="First slide"
             />
             <div
@@ -127,7 +157,7 @@
           <div class="carousel-item">
             <img
               class="d-block img-fluid"
-              src="./img/hero-1.jpg"
+              src="./img/carousel-02.jpg"
               alt="First slide"
             />
             <div
@@ -144,7 +174,7 @@
           <div class="carousel-item">
             <img
               class="d-block img-fluid"
-              src="./img/hero-1.jpg"
+              src="./img/carousel-03.jpg"
               alt="First slide"
             />
             <div
@@ -161,8 +191,145 @@
         </div>
       </div>
     </section>
+    <!-- REASON -->
+    <section class="reasons">
+      <div class="reasons__list">
+        <div class="reasons__title">
+          <div>
+            <h1>Điểm ưu việt</h1>
+            <p>CHỈ CÓ TẠI CYBERSOFT</p>
+          </div>
+        </div>
+
+        <div class="reasons__item">
+          <div class="reasons__one reasons__info">
+            <h1>01</h1>
+            <p>Học theo lộ trình, có định hướng</p>
+          </div>
+          <div class="reasons__image">
+            <div class="reasons__slider owl-carousel owl-theme">
+              <img src="./img/reasons_1.jpg" alt="" />
+              <img src="./img/reasons_3.jpg" alt="" />
+              <img src="./img/reasons_5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="reasons__item reasons__single">
+          <div class="reasons__two reasons__info">
+            <h1>02</h1>
+            <p>Nền tảng, tư duy, cốt lõi trong lập trình</p>
+          </div>
+          <div class="reasons__image">
+            <div class="reasons__slider owl-carousel owl-theme">
+              <img src="./img/reasons_1.jpg" alt="" />
+              <img src="./img/reasons_3.jpg" alt="" />
+              <img src="./img/reasons_5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="reasons__item">
+          <div class="reasons__three reasons__info">
+            <h1>03</h1>
+            <p>Mài giũa bạn qua kinh nghiệm, dự án thực tế</p>
+          </div>
+          <div class="reasons__image">
+            <div class="reasons__slider owl-carousel owl-theme">
+              <img src="./img/reasons_1.jpg" alt="" />
+              <img src="./img/reasons_3.jpg" alt="" />
+              <img src="./img/reasons_5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="reasons__item">
+          <div class="reasons__four reasons__info">
+            <h1>04</h1>
+            <p>Teamwork, Scrum - Agile. Mentor tận tâm</p>
+          </div>
+          <div class="reasons__image">
+            <div class="reasons__slider owl-carousel owl-theme">
+              <img src="./img/reasons_1.jpg" alt="" />
+              <img src="./img/reasons_3.jpg" alt="" />
+              <img src="./img/reasons_5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="reasons__item reasons__single">
+          <div class="reasons__five reasons__info">
+            <h1>05</h1>
+            <p>Công nghệ mới, chuyên sâu, thực tế</p>
+          </div>
+          <div class="reasons__image">
+            <div class="reasons__slider owl-carousel owl-theme">
+              <img src="./img/reasons_1.jpg" alt="" />
+              <img src="./img/reasons_3.jpg" alt="" />
+              <img src="./img/reasons_5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CATEGORIES -->
+    <section class="categories">
+      <div class="categories__content container">
+        <h1>Các Khóa Học Tại Cybersoft</h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="categories__item shadow-border">
+              <a href="#">
+                <img src="./img/khoatuduy.jpg" alt="Card image" />
+                <h4>Lập Trình Tư Duy</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="categories__item shadow-border">
+              <a href="#">
+                <img src="./img/khoafrontend.jpg" alt="Card image" />
+                <h4>Lập Trình Front End</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="categories__item shadow-border">
+              <a href="#">
+                <img src="./img/khoabackend.jpg" alt="Card image" />
+                <h4>Lập Trình Back End</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="categories__item shadow-border">
+              <a href="#">
+                <img src="./img/khoamobile.jpg" alt="Card image" />
+                <h4>Lập Trình Di Động</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="categories__item shadow-border">
+              <a href="#">
+                <img src="./img/khoafullstack.jpg" alt="Card image" />
+                <h4>Lập Trình Full Stack</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="categories__item shadow-border">
+              <a href="#">
+                <img src="./img/khoadesign.jpg" alt="Card image" />
+                <h4>Thiết Kế Web</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- COURSES -->
-    <section class="courses">
+    <!-- <section class="courses">
       <div class="courses__content container">
         <h2>Khóa Học Tiêu Biểu</h2>
         <div class="row">
@@ -1263,165 +1430,300 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- CATEGORIES -->
-    <section class="categories">
-      <div class="categories__content container">
-        <h1>Các Khóa Tại Cybersoft</h1>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="categories__item">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/kh1.jpg"
-                  alt="Card image"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lập Trình Tư Duy</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="categories__item">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/kh1.jpg"
-                  alt="Card image"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lập Trình Front End</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="categories__item">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/kh1.jpg"
-                  alt="Card image"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lập Trình Back End</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="categories__item">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/kh1.jpg"
-                  alt="Card image"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lập Trình Di Động</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="categories__item">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/kh1.jpg"
-                  alt="Card image"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lập Trình Full Stack</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="categories__item">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/kh1.jpg"
-                  alt="Card image"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Thiết Kế Web</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section> -->
+
     <section class="numbers">
-      <div class="numbers__content">
+      <div class="numbers__content container">
         <div class="numbers__item">
-          <h1 class="counter">3500</h1>
+          <h1 class="counter">4</h1>
           <p>Cở Sở</p>
         </div>
         <div class="numbers__item">
-          <h1 class="counter">650</h1>
+          <h1 class="counter">54</h1>
           <p>Đối tác</p>
         </div>
         <div class="numbers__item">
-          <h1 class="counter">10</h1>
-          <p>Học Viên Tốt Nghiệp</p>
+          <h1 class="counter">3250</h1>
+          <p>Học Viên</p>
         </div>
         <div class="numbers__item">
-          <h1 class="counter">1010</h1>
+          <h1 class="counter">3</h1>
           <p>Năm Hoạt Động</p>
         </div>
       </div>
     </section>
-    <!-- FOOTER -->
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer__top">
+    <!-- FEEDBACK -->
+    <section class="feedback">
+      <div class="feedback__content container">
+        <h2>Học Viên Tiêu Biểu</h2>
         <div class="row">
-          <div class="col-8">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="footer__menu">
-                  <ul>
-                    <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                  </ul>
+          <div class="col-md-12">
+            <div class="feedback__tab">
+              <div class="tab-content" id="feedbackTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="workers"
+                  role="tabpanel"
+                >
+                  <div class="feedback__item owl-carousel owl-theme">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-01.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Quốc</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Cơ Điện Tử ĐH Bách Khoa " Tôi vô cùng hài
+                          lòng với công việc hiện tại của tôi tại Global
+                          CyberSoft. Tôi đã chọn lại được đúng đam mê của mình
+                          nhờ các khóa học chuyên sâu tại CyberSoft."
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-02.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Đinh Phúc Nguyên</h4>
+                        <p class="card-text">Học viên ngành CNTT</p>
+                        <p class="card-text feedback__item__content">
+                          FPT " Tôi học được rất nhiều từ kỹ năng làm việc, các
+                          kỹ thuật chuyên sâu và kỹ năng mềm tại các khóa học
+                          của CyberSoft. Điều này đã giúp tôi tự tin rất nhiều
+                          khi làm việc tại tập đoàn FPT "
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-03.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Đức Thái</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Xây dựng ĐH BK Hà Nội " Sau 2 năm tốt nghiệp
+                          ngành xây dựng, tôi đã thấy mình không phù hợp. Tôi đã
+                          tìm đến với CyberSoft và nay tôi đã có được công việc
+                          đúng mong đợi của mình tại Viivue"
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-03.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Đức Thái</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Xây dựng ĐH BK Hà Nội " Sau 2 năm tốt nghiệp
+                          ngành xây dựng, tôi đã thấy mình không phù hợp. Tôi đã
+                          tìm đến với CyberSoft và nay tôi đã có được công việc
+                          đúng mong đợi của mình tại Viivue"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="students" role="tabpanel">
+                  <div class="feedback__item owl-carousel owl-theme">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-01.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Quốc</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Cơ Điện Tử ĐH Bách Khoa " Tôi vô cùng hài
+                          lòng với công việc hiện tại của tôi tại Global
+                          CyberSoft. Tôi đã chọn lại được đúng đam mê của mình
+                          nhờ các khóa học chuyên sâu tại CyberSoft."
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-02.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Đinh Phúc Nguyên</h4>
+                        <p class="card-text">Học viên ngành CNTT</p>
+                        <p class="card-text feedback__item__content">
+                          FPT " Tôi học được rất nhiều từ kỹ năng làm việc, các
+                          kỹ thuật chuyên sâu và kỹ năng mềm tại các khóa học
+                          của CyberSoft. Điều này đã giúp tôi tự tin rất nhiều
+                          khi làm việc tại tập đoàn FPT "
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-03.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Đức Thái</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Xây dựng ĐH BK Hà Nội " Sau 2 năm tốt nghiệp
+                          ngành xây dựng, tôi đã thấy mình không phù hợp. Tôi đã
+                          tìm đến với CyberSoft và nay tôi đã có được công việc
+                          đúng mong đợi của mình tại Viivue"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="facebooks" role="tabpanel">
+                  <div class="feedback__item owl-carousel owl-theme">
+                    <
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-01.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Quốc</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Cơ Điện Tử ĐH Bách Khoa " Tôi vô cùng hài
+                          lòng với công việc hiện tại của tôi tại Global
+                          CyberSoft. Tôi đã chọn lại được đúng đam mê của mình
+                          nhờ các khóa học chuyên sâu tại CyberSoft."
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-02.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Đinh Phúc Nguyên</h4>
+                        <p class="card-text">Học viên ngành CNTT</p>
+                        <p class="card-text feedback__item__content">
+                          FPT " Tôi học được rất nhiều từ kỹ năng làm việc, các
+                          kỹ thuật chuyên sâu và kỹ năng mềm tại các khóa học
+                          của CyberSoft. Điều này đã giúp tôi tự tin rất nhiều
+                          khi làm việc tại tập đoàn FPT "
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/hocvientieubieu-03.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Nguyễn Đức Thái</h4>
+                        <p class="card-text">Học viên chuyển ngành</p>
+                        <p class="card-text feedback__item__content">
+                          Nền tảng Xây dựng ĐH BK Hà Nội " Sau 2 năm tốt nghiệp
+                          ngành xây dựng, tôi đã thấy mình không phù hợp. Tôi đã
+                          tìm đến với CyberSoft và nay tôi đã có được công việc
+                          đúng mong đợi của mình tại Viivue"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-3">
-                <div class="footer__menu">
-                  <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Hỗ trợ và Tư vấn</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="footer__menu">
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><img src="./img/facebook-logo.png" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="./img/zalo-logo.png" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <ul class="nav nav-tabs" id="feedbackTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="workers-tab"
+                    data-toggle="tab"
+                    href="#workers"
+                    role="tab"
+                    >Người đi làm</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="students-tab"
+                    data-toggle="tab"
+                    href="#students"
+                    role="tab"
+                    >Sinh viên</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="facebooks-tab"
+                    data-toggle="tab"
+                    href="#facebooks"
+                    role="tab"
+                    >Nhận xét trên Facebook</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer__bottom">
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Hỗ trợ và Tư vấn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer__menu footer__icon">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom container">
         <div class="row">
           <div class="col-6">
             <div class="footer__botLeft">
-              <img src="./img/logo-coral.svg" alt="" />
+              <img src="./img/logo.png" alt="" />
               <p class="mb-0">Copyright © 2020 Cybersoft ELearning</p>
             </div>
           </div>
@@ -1441,11 +1743,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- venobox -->
+    <script type="text/javascript" src="./js/venobox.js"></script>
+
     <!-- thư viện count up -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./js/jquery.countup.min.js"></script>
     <script>
-      // đây là cách thêm javascript internal
       $(".counter").countUp();
     </script>
 
@@ -1453,7 +1758,6 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
-        // courses__item
         $(".courses__item").owlCarousel({
           loop: false,
           margin: 10,
@@ -1470,6 +1774,49 @@
               items: 5,
             },
           },
+        });
+        $(".reasons__slider").owlCarousel({
+          loop: true,
+          items: 1,
+          margin: 0,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: false,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+        $(".feedback__item").owlCarousel({
+          loop: false,
+          margin: 10,
+          nav: false,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+
+        // venobox
+        $(".venobox").venobox({
+          autoplay: false,
         });
       });
     </script>

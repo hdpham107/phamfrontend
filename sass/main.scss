@@ -7,23 +7,19 @@
 
 // Base
 @import "./Base/reset";
-@import "./Base/normalize";
+// @import "./Base/normalize";
 
 // Components
 @import "./Components/button";
 
 // Layouts
 @import "./Layouts/header";
-// @import "./Layouts/cover";
-// @import './Layouts/intro';
 @import "./Layouts/courseCarousel";
-@import "./Layouts/courses";
-@import "./Layouts/students";
-// @import './Layouts/services';
+@import "./Layouts/reasons";
 @import "./Layouts/categories";
-// @import "./Layouts/banner";
-// @import "./Layouts/feedback";
+@import "./Layouts/courses";
 @import "./Layouts/numbers";
+@import "./Layouts/feedback";
 @import "./Layouts/footer";
 
 // Page

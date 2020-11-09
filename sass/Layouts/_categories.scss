@@ -1,36 +1,32 @@
-.topCategories {
-    margin-top: $mg-2;
+.categories {
+    // margin-top: $mg-2;
+    padding: 70px;
 
-    .topCategories__content {
-        width: 80%;
-        margin: 0 auto;
-        padding: $pd-0;
-
-        h2 {
-            @include styleText($color-black-0, $fs-2, $fw-bold-1);
+    .categories__content {
+        text-align: center;
+        h1 {
+            @include styleText($color-black-1, $fs-4, $fw-bold);
+            padding: $pd-2;
         }
 
-        .row {
-            margin-bottom: $mg-1;
-        }
+        .categories__item {
+            position: relative;
+            margin-bottom: $mg-2;
 
-        .topCategories__item {
-            display: flex;
-            background-color: $color-white-0;
-            border: 1px solid $color-gray-2;
-            padding: $pd-1;
-            align-items: center;
-
-            .topCategories__icon {
-                @include styleText($color-red-1, $fs-2, $fw-normal);
-                padding-right: $pd-1 + 6;
+            img {
+                width: 100%;
+                display: block;
             }
-
-            .topCategories__caption {
-                padding-top: $pd-1;
-                p {
-                    @include styleText($color-gray-4, $fs-0, $fw-normal);
-                }
+            h4 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: $pd-2;
+                margin: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+                z-index: 1;
+                @include styleText($color-white-0, $fs-2, $fw-bold-0);
             }
         }
     }
